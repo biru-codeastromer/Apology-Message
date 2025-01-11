@@ -5,5 +5,7 @@
 
 ## Technologies Used:
 -**HTML**: The structure of the apology message generator and form elements.
+
 -**CSS**: Styling the application to make the apology message both visually appealing and easy to read.
+
 -**JavaScript**: Handling message customization, user input, and message sending functionality.
