@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet">    
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text" style="font-family: Borel;color: cornsilk;">I’m so, so sorry😔! Please forgive me🥺!</h1>
+                <h1 class = "header_text" style="font-family: Borel;color: cornsilk;">Can you find it in your heart to forgive my mistakes🙂?</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.tenor.com/Idr_-NLOu8oAAAAj/milk-and-mocha.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()" style="font-family: Delius Unicase;">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()" style="font-family: Delius Unicase;">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
